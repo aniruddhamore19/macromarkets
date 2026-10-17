@@ -1,0 +1,8 @@
+flask
+waitress
+pandas
+requests
+beautifulsoup4
+lxml
+yfinance
+tradingview-screener

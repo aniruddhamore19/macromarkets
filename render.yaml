@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: markets-by-aniruddha
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: python markets_by_aniruddha.py
+    healthCheckPath: /healthz
+    envVars:
+      - key: ACCESS_CODE
+        sync: false
