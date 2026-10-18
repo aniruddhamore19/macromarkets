@@ -1073,7 +1073,7 @@ def main() -> None:
     for name in JOBS:
         threading.Thread(target=worker, args=(name,), daemon=True).start()
     if HOSTED:
-        print(f"{APP_NAME} hosted mode on port {PORT} | access code: {'ON' if ACCESS_CODE else 'OFF (anyone with the link can view!)'}")
+        print(f"{APP_NAME} [build 18Oct-B] hosted mode on port {PORT} | access code: {'ON' if ACCESS_CODE else 'OFF (anyone with the link can view!)'}")
         try:
             from waitress import serve
         except ImportError:
